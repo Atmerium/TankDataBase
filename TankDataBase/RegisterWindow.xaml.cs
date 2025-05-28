@@ -36,7 +36,7 @@ namespace TankDataBase
                 || string.IsNullOrWhiteSpace(confirmPassword)
                 || string.IsNullOrWhiteSpace(email))
             {
-                MessageBox.Show("Minden mezőt ki kell tölteni",
+                MessageBox.Show("You must fill all the spaces!",
                     "Hiba", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
@@ -75,7 +75,7 @@ namespace TankDataBase
                 writer.WriteLine(user.ToString());
             }
 
-            MessageBox.Show("Sikeres regisztráció!", "Regisztráció", MessageBoxButton.OK,
+            MessageBox.Show("Successful registration!", "Regisztráció", MessageBoxButton.OK,
                 MessageBoxImage.Information);
 
             MainWindow mainWindow = new MainWindow();

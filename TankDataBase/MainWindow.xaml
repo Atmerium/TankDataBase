@@ -27,14 +27,14 @@
 		   VerticalAlignment="Center" Margin="0, 0, 10, 0" Foreground="Red"/>
         <TextBox x:Name="UsernameTextBox" Grid.Row="1" Grid.Column="1" Width="200"/>
 
-        <TextBlock Text="Jelszó:" Grid.Row="2" Grid.Column="0" 
+        <TextBlock Text="Password:" Grid.Row="2" Grid.Column="0" 
    VerticalAlignment="Center" Margin="0, 0, 10, 0" Foreground="Red"/>
         <PasswordBox x:Name="PasswordBox" Grid.Row="2" Grid.Column="1" Width="200"/>
 
-        <Button Content="Bejelentkezés" Grid.Row="3" Grid.ColumnSpan="2" Width="150"
+        <Button Content="Login" Grid.Row="3" Grid.ColumnSpan="2" Width="150"
 	HorizontalAlignment="Center" Margin="0,10,0,0" Click="Button_Click_1" />
 
-        <Button Content="Regisztráció" Grid.Row="4" Grid.ColumnSpan="2" Width="150"
+        <Button Content="Registration" Grid.Row="4" Grid.ColumnSpan="2" Width="150"
     HorizontalAlignment="Center" Margin="0,10,0,0" Click="RegistrationWindow"/>
     </Grid>
 </Window>
