@@ -1,0 +1,20 @@
+﻿<Page x:Class="TankDataBase.Reaction"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TankDataBase"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Reaction">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="InstructionText" Text="Press the button to challenge your reaction!"
+               FontSize="16" TextAlignment="Center" Margin="10" Foreground="Red" FontWeight="Bold"/>
+            <Button x:Name="ReactionButton" Content="SHOOT NOW"
+            FontSize="18" Width="200" Height="50" Click="ReactionButton_Click" Visibility="Hidden" Foreground="Red"/>
+            <Button Content="New match" Width="150" Height="40" Margin="20" Click="StartGame"/>
+        </StackPanel>
+    </Grid>
+</Page>
